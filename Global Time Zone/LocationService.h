@@ -5,6 +5,9 @@
 #include "TimeZone.h"
 
 class LocationService {
+public:
+    std::map<std::string, TimeZone> getAllTimeZones() const;
+
 private:
     std::map<std::string, TimeZone> timeZones;
 public:

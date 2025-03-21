@@ -131,12 +131,15 @@
     <ClCompile Include="Global Time Zone.cpp" />
     <ClCompile Include="LocationService.cpp" />
     <ClCompile Include="TimeService.cpp" />
+    <ClCompile Include="UserService.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DSTService.h" />
     <ClInclude Include="LocationService.h" />
     <ClInclude Include="TimeService.h" />
     <ClInclude Include="TimeZone.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="UserService.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

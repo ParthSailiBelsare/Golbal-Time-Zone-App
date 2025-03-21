@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\DSTService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\DSTService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\Global Time Zone.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\Global Time Zone.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\LocationService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\LocationService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeZone.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\TimeZone.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\LocationService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -19,34 +23,115 @@
       "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\TimeService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\UserService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\UserService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\TimeService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\UserService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\UserService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Global Time Zone\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\Global Time Zone.vcxproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Global Time Zone\\Global Time Zone.vcxproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\DSTService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\DSTService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeZone.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\TimeZone.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\Global Time Zone.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\Global Time Zone.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\DSTService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEEDBB73-6A32-4470-9FA2-80167D4425E8}|Global Time Zone\\Global Time Zone.vcxproj|solutionrelative:Global Time Zone\\DSTService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 250,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserService.cpp",
+              "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\UserService.cpp",
+              "RelativeDocumentMoniker": "Global Time Zone\\UserService.cpp",
+              "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\UserService.cpp",
+              "RelativeToolTip": "Global Time Zone\\UserService.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-21T07:49:38.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserService.h",
+              "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\UserService.h",
+              "RelativeDocumentMoniker": "Global Time Zone\\UserService.h",
+              "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\UserService.h",
+              "RelativeToolTip": "Global Time Zone\\UserService.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-21T07:49:18.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.h",
+              "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\User.h",
+              "RelativeDocumentMoniker": "Global Time Zone\\User.h",
+              "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\User.h",
+              "RelativeToolTip": "Global Time Zone\\User.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-21T07:48:58.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Global Time Zone.cpp",
+              "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\Global Time Zone.cpp",
+              "RelativeDocumentMoniker": "Global Time Zone\\Global Time Zone.cpp",
+              "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\Global Time Zone.cpp",
+              "RelativeToolTip": "Global Time Zone\\Global Time Zone.cpp",
+              "ViewState": "AgIAAJEAAAAAAAAAAADwv6QAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-20T06:06:11.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TimeService.h",
+              "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeService.h",
+              "RelativeDocumentMoniker": "Global Time Zone\\TimeService.h",
+              "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeService.h",
+              "RelativeToolTip": "Global Time Zone\\TimeService.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-20T06:22:55.065Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,61 +141,92 @@
               "RelativeDocumentMoniker": "Global Time Zone\\LocationService.cpp",
               "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\LocationService.cpp",
               "RelativeToolTip": "Global Time Zone\\LocationService.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-20T06:26:38.27Z"
+              "WhenOpened": "2025-03-20T06:26:38.27Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LocationService.h",
               "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\LocationService.h",
               "RelativeDocumentMoniker": "Global Time Zone\\LocationService.h",
               "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\LocationService.h",
               "RelativeToolTip": "Global Time Zone\\LocationService.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-20T06:26:16.163Z"
+              "WhenOpened": "2025-03-20T06:26:16.163Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "TimeZone.h",
+              "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeZone.h",
+              "RelativeDocumentMoniker": "Global Time Zone\\TimeZone.h",
+              "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeZone.h",
+              "RelativeToolTip": "Global Time Zone\\TimeZone.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-20T06:15:46.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "TimeService.cpp",
               "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeService.cpp",
               "RelativeDocumentMoniker": "Global Time Zone\\TimeService.cpp",
               "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeService.cpp",
               "RelativeToolTip": "Global Time Zone\\TimeService.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-20T06:23:31.763Z"
+              "WhenOpened": "2025-03-20T06:23:31.763Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TimeService.h",
-              "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeService.h",
-              "RelativeDocumentMoniker": "Global Time Zone\\TimeService.h",
-              "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeService.h",
-              "RelativeToolTip": "Global Time Zone\\TimeService.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-20T06:22:55.065Z"
+              "DocumentIndex": 9,
+              "Title": "users.json",
+              "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\users.json",
+              "RelativeDocumentMoniker": "Global Time Zone\\users.json",
+              "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\users.json",
+              "RelativeToolTip": "Global Time Zone\\users.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-21T09:05:42.702Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
+              "Title": "Global Time Zone.vcxproj.user",
+              "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\Global Time Zone.vcxproj.user",
+              "RelativeDocumentMoniker": "Global Time Zone\\Global Time Zone.vcxproj.user",
+              "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\Global Time Zone.vcxproj.user",
+              "RelativeToolTip": "Global Time Zone\\Global Time Zone.vcxproj.user",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2025-03-21T09:05:23.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "DSTService.cpp",
               "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\DSTService.cpp",
               "RelativeDocumentMoniker": "Global Time Zone\\DSTService.cpp",
               "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\DSTService.cpp",
               "RelativeToolTip": "Global Time Zone\\DSTService.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-20T06:22:26.905Z"
+              "WhenOpened": "2025-03-20T06:22:26.905Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "DSTService.h",
               "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\DSTService.h",
               "RelativeDocumentMoniker": "Global Time Zone\\DSTService.h",
@@ -120,30 +236,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-20T06:20:35.503Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TimeZone.h",
-              "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeZone.h",
-              "RelativeDocumentMoniker": "Global Time Zone\\TimeZone.h",
-              "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\TimeZone.h",
-              "RelativeToolTip": "Global Time Zone\\TimeZone.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-20T06:15:46.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Global Time Zone.cpp",
-              "DocumentMoniker": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\Global Time Zone.cpp",
-              "RelativeDocumentMoniker": "Global Time Zone\\Global Time Zone.cpp",
-              "ToolTip": "C:\\Users\\pabl\\source\\repos\\Global Time Zone\\Global Time Zone\\Global Time Zone.cpp",
-              "RelativeToolTip": "Global Time Zone\\Global Time Zone.cpp",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwCAAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-20T06:06:11.931Z"
             }
           ]
         }

@@ -27,6 +27,9 @@
     <ClCompile Include="LocationService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UserService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TimeZone.h">
@@ -39,6 +42,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LocationService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
