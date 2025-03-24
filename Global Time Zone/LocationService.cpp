@@ -6,8 +6,8 @@ LocationService::LocationService() {
     timeZones["London"] = TimeZone("London", 0, true);
     timeZones["Tokyo"] = TimeZone("Tokyo", 9, false);
     timeZones["Sydney"] = TimeZone("Sydney", 11, false);
-    timeZones["LosAngeles"] = TimeZone("Los Angeles", -7, true);
-    timeZones["Chicago"] = TimeZone("Chicago", -5, true);
+    timeZones["LosAngeles"] = TimeZone("Los Angeles", -7, false);
+    timeZones["Chicago"] = TimeZone("Chicago", -5, false);
     timeZones["Paris"] = TimeZone("Paris", 1, true);
     timeZones["Berlin"] = TimeZone("Berlin", 1, true);
     timeZones["Moscow"] = TimeZone("Moscow", 3, false);

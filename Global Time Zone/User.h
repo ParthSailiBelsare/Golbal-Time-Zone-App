@@ -1,6 +1,4 @@
-#ifndef USER_H
-#define USER_H
-
+#pragma once
 #include <string>
 #include <vector>
 
@@ -16,5 +14,3 @@ public:
     // Parameterized constructor
     User(std::string uname, std::string pwd) : username(uname), password(pwd) {}
 };
-
-#endif

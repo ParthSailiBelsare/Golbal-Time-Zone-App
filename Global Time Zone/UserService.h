@@ -1,6 +1,4 @@
-#ifndef USERSERVICE_H
-#define USERSERVICE_H
-
+#pragma once
 #include "User.h"
 #include <unordered_map>
 #include <iostream>
@@ -20,5 +18,3 @@ public:
     void addFavoriteTimeZone(const std::string& username, const std::string& timezone);
     void viewFavoriteTimeZones(const std::string& username);
 };
-
-#endif

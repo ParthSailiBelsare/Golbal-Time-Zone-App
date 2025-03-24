@@ -1,5 +1,4 @@
-#ifndef LOCATIONSERVICE_H
-#define LOCATIONSERVICE_H
+#pragma once
 #include <map>
 #include <string>
 #include "TimeZone.h"
@@ -15,5 +14,3 @@ public:
     TimeZone* getTimeZone(const std::string& location);
     void displayAvailableTimeZones();
 };
-
-#endif

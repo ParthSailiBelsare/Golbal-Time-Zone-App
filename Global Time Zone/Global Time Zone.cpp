@@ -33,6 +33,8 @@ int main() {
         std::cin >> choice;
         std::string city1, city2;
         std::tm utcTime, resultTime;
+        TimeZone* srcTZ = nullptr;
+        TimeZone* tgtTZ = nullptr;
 
         switch (choice) {
         case 1:
@@ -59,31 +61,63 @@ int main() {
             break;
 
 
-        case 2:
-            std::cout << "Enter source city: ";
-            std::cin >> city1;
-            std::cout << "Enter target city: ";
-            std::cin >> city2;
+        case 2: 
+            std::cout << "Do you want to convert specific time and date(y/n)";
+            char ch;
+            std::cin >> ch;
+            switch (ch) {
+            case 'y':timeService.convertUserInputTimeZone(locationService);
+                break;
 
-            if (std::cin.fail()) {
-                std::cin.clear();
-                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                std::cout << "Invalid input. Please enter valid city names.\n";
-            }
-            else if (auto* srcTZ = locationService.getTimeZone(city1)) {
-                if (auto* tgtTZ = locationService.getTimeZone(city2)) {
-                    utcTime = timeService.getCurrentUTCTime();
-                    resultTime = timeService.convertTimeZone(utcTime, *srcTZ, *tgtTZ);
-                    timeService.displayTime(resultTime, *tgtTZ, dstService.isDST(resultTime, *tgtTZ));
+            case 'n':
+                std::cout << "Enter source city: ";
+                std::cin >> city1;
+                std::cout << "Enter target city: ";
+                std::cin >> city2;
+
+                // Clear invalid input
+                if (std::cin.fail()) {
+                    std::cin.clear();
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                    std::cout << "Invalid input. Please enter valid city names.\n";
+                    break;
                 }
-                else {
+
+                // Fetch Time Zones
+                srcTZ = locationService.getTimeZone(city1);
+                tgtTZ = locationService.getTimeZone(city2);
+
+                if (!srcTZ) {
+                    std::cout << "Source city not found.\n";
+                }
+                else if (!tgtTZ) {
                     std::cout << "Target city not found.\n";
                 }
-            }
-            else {
-                std::cout << "Source city not found.\n";
+                else {
+                    // Get current UTC time
+                    utcTime = timeService.getCurrentUTCTime();
+
+                    // Calculate source local time from UTC
+                    std::tm srcLocalTime = utcTime;
+                    double srcOffset = srcTZ->utc_offset;
+                    int srcHours = static_cast<int>(srcOffset);
+                    int srcMinutes = static_cast<int>((srcOffset - srcHours) * 60);
+                    srcLocalTime.tm_hour += srcHours;
+                    srcLocalTime.tm_min += srcMinutes;
+                    std::mktime(&srcLocalTime);
+
+                    // Now convert from source to target
+                    resultTime = timeService.convertTimeZone(srcLocalTime, *srcTZ, *tgtTZ);
+
+                    // Check for DST and display the result
+                    DSTService dstService;
+                    bool isDst = dstService.isDST(resultTime, *tgtTZ);
+                    timeService.displayTime(resultTime, *tgtTZ, isDst);
+                }
+                break;
             }
             break;
+            
 
         case 3:
             std::cout << std::left << std::setw(20) << "City"

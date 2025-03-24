@@ -1,5 +1,4 @@
-#ifndef TIMEZONE_H
-#define TIMEZONE_H
+#pragma once
 #include <string>
 
 class TimeZone {
@@ -16,5 +15,3 @@ public:
         : name(n), utc_offset(offset), observes_dst(dst) {
     }
 };
-
-#endif
