@@ -1,9 +1,2 @@
-﻿  DSTService.cpp
-  Global Time Zone.cpp
-C:\Users\pabl\source\repos\Global Time Zone\Global Time Zone\Global Time Zone.cpp(48,44): warning C4244: '+=': conversion from 'double' to 'time_t', possible loss of data
-C:\Users\pabl\source\repos\Global Time Zone\Global Time Zone\Global Time Zone.cpp(135,27): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  LocationService.cpp
-  TimeService.cpp
-  UserService.cpp
-  Generating Code...
+﻿  TimeService.cpp
   Global Time Zone.vcxproj -> C:\Users\pabl\source\repos\Global Time Zone\x64\Debug\Global Time Zone.exe

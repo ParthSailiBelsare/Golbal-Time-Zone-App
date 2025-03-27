@@ -4,7 +4,7 @@
 #include <sstream>
 
 void UserService::loadUsers() {
-    std::ifstream file("users.json");
+    std::ifstream file("users.csv");
     if (!file.is_open()) return;
 
     std::string line;
@@ -23,7 +23,7 @@ void UserService::loadUsers() {
 }
 
 void UserService::saveUsers() {
-    std::ofstream file("users.json");
+    std::ofstream file("users.csv");
     for (const auto& pair : users) {
         const User& user = pair.second;
         file << user.username << "," << user.password;

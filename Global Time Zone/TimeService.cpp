@@ -19,49 +19,7 @@ std::tm TimeService::getCurrentUTCTime() {
     return utcTime;
 }
 
-
-//std::tm TimeService::convertTimeZone(const std::tm& sourceTime, const TimeZone& source, const TimeZone& target) {
-//    std::tm localTime = sourceTime;
-//
-//    std::cout << "Source Time in " << source.name << ": "
-//        << std::put_time(&localTime, "%Y-%m-%d %H:%M:%S") << std::endl;
-//
-//    // Convert source time to UTC
-//    double sourceOffset = source.utc_offset;
-//    int sourceHours = static_cast<int>(sourceOffset);
-//    int sourceMinutes = static_cast<int>((sourceOffset - sourceHours) * 60);
-//
-//    localTime.tm_hour -= sourceHours;
-//    localTime.tm_min -= sourceMinutes;
-//    std::mktime(&localTime); // Normalize the time
-//
-//    std::cout << "Converted to UTC Time: "
-//        << std::put_time(&localTime, "%Y-%m-%d %H:%M:%S") << std::endl;
-//
-//    // Convert UTC to target time
-//    double targetOffset = target.utc_offset;
-//    int targetHours = static_cast<int>(targetOffset);
-//    int targetMinutes = static_cast<int>((targetOffset - targetHours) * 60);
-//
-//    localTime.tm_hour += targetHours;
-//    localTime.tm_min += targetMinutes;
-//    std::mktime(&localTime); // Normalize the time
-//
-//    // Apply DST if applicable
-//    DSTService dstService;
-//    if (target.observes_dst && dstService.isDST(localTime, target)) {
-//        localTime.tm_hour += 1;
-//        std::mktime(&localTime);
-//        std::cout << "After DST Adjustment: "
-//            << std::put_time(&localTime, "%Y-%m-%d %H:%M:%S") << std::endl;
-//    }
-//
-//    std::cout << "Final Time in " << target.name << ": "
-//        << std::put_time(&localTime, "%Y-%m-%d %H:%M:%S") << std::endl;
-//
-//    return localTime;
-//}
-std::tm TimeService::convertTimeZone(const std::tm& sourceTime, const TimeZone& source, const TimeZone& target) {
+/*std::tm TimeService::convertTimeZone(const std::tm& sourceTime, const TimeZone& source, const TimeZone& target) {
     std::tm localTime = sourceTime;
 
     // First check if DST applies to source timezone and adjust if needed
@@ -105,6 +63,8 @@ std::tm TimeService::convertTimeZone(const std::tm& sourceTime, const TimeZone& 
     localTime.tm_min += targetMinutes;
     std::mktime(&localTime); // Normalize the time
 
+    std::cout << "Before adjustment: " << std::put_time(&localTime, "%Y-%m-%d %H:%M:%S") << std::endl;
+
     // Apply DST if applicable to target
     bool targetDST = target.observes_dst && dstService.isDST(localTime, target);
     if (targetDST) {
@@ -116,6 +76,75 @@ std::tm TimeService::convertTimeZone(const std::tm& sourceTime, const TimeZone& 
 
     std::cout << "Final Time in " << target.name << ": "
         << std::put_time(&localTime, "%Y-%m-%d %H:%M:%S") << std::endl;
+
+    return localTime;
+}*/
+std::tm TimeService::convertTimeZone(const std::tm& sourceTime, const TimeZone& source, const TimeZone& target) {
+    std::tm localTime = sourceTime;
+    std::cout << "Source time: " << std::put_time(&localTime, "%Y-%m-%d %H:%M:%S") << "\n";
+    // First check if DST applies to source timezone and adjust if needed
+    DSTService dstService;
+    bool sourceDST = source.observes_dst && dstService.isDST(localTime, source);
+    //std::cout << "Function returns " << dstService.isDST(localTime, source) << source.observes_dst << "\n";
+    std::tm adjustedSourceTime = localTime;
+
+    /*std::cout << "source dst status: " << sourceDST;*/
+    if (sourceDST) {
+        adjustedSourceTime.tm_hour += 1;
+        std::mktime(&adjustedSourceTime);
+    }
+
+    // Display the source time (including DST adjustment if applicable)
+    std::cout << "Source Time in " << source.name << ": "
+        << std::put_time(&adjustedSourceTime, "%Y-%m-%d %H:%M:%S")
+        << (sourceDST ? " (with DST)" : "") << std::endl;
+
+    // Convert source time to UTC
+    double sourceOffset = source.utc_offset;
+    int sourceHours = static_cast<int>(sourceOffset);
+    int sourceMinutes = static_cast<int>((sourceOffset - sourceHours) * 60);
+
+    localTime.tm_hour -= sourceHours;
+    localTime.tm_min -= sourceMinutes;
+
+    // If source has DST, subtract that hour too when converting to UTC
+    if (sourceDST) {
+        localTime.tm_hour -= 1;
+    }
+
+    std::mktime(&localTime); // Normalize the time
+
+    /*std::cout << "Converted to UTC Time: "
+        << std::put_time(&localTime, "%Y-%m-%d %H:%M:%S") << std::endl;*/
+
+    // Convert UTC to target time
+    double targetOffset = target.utc_offset;
+    int targetHours = static_cast<int>(targetOffset);
+    int targetMinutes = static_cast<int>((targetOffset - targetHours) * 60);
+
+    localTime.tm_hour += targetHours;
+    localTime.tm_min += targetMinutes;
+    std::mktime(&localTime); // Normalize the time
+
+    // Print time before DST adjustment for debugging
+    /*std::cout << "Before adjustment: "
+        << std::put_time(&localTime, "%Y-%m-%d %H:%M:%S") << std::endl;*/
+
+    // Apply DST if applicable to target
+    bool targetDST = target.observes_dst && dstService.isDST(localTime, target);
+    //std::cout << "Function returns " << dstService.isDST(localTime, target) << target.observes_dst << "\n";
+
+    /*std::cout << "source dst status: " << target.observes_dst << dstService.isDST(localTime, target);*/
+    if (targetDST) {
+        localTime.tm_hour += 1;
+        std::mktime(&localTime);
+        /*std::cout << "After DST Adjustment: "
+            << std::put_time(&localTime, "%Y-%m-%d %H:%M:%S") << std::endl;*/
+    }
+
+    std::cout << "Time in " << target.name << ": "
+        << std::put_time(&localTime, "%Y-%m-%d %H:%M:%S")
+        << " (UTC" << (target.utc_offset >= 0 ? "+" : "") << target.utc_offset << ")"  << std::endl;
 
     return localTime;
 }
@@ -185,10 +214,10 @@ void TimeService::convertUserInputTimeZone(LocationService& locationService) {
 
     // Take user input
     std::cout << "Enter source city: ";
-    std::cin >> sourceCity;
-    std::cout << "Enter target city: ";
-    std::cin >> targetCity;
     std::cin.ignore();
+    std::getline(std::cin, sourceCity);
+    std::cout << "Enter target city: ";
+    std::getline(std::cin, targetCity);
     std::cout << "Enter date and time (YYYY-MM-DD HH:MM): ";
     std::getline(std::cin, dateTimeStr);
 
@@ -215,6 +244,6 @@ void TimeService::convertUserInputTimeZone(LocationService& locationService) {
     std::tm resultTime = convertTimeZone(userTime, *sourceZone, *targetZone);
 
     // Display result
-    DSTService dstService;
-    displayTime(resultTime, *targetZone, dstService.isDST(resultTime, *targetZone));
+   /* DSTService dstService;
+    displayTime(resultTime, *targetZone, dstService.isDST(resultTime, *targetZone));*/
 }

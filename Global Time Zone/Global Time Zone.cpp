@@ -39,7 +39,8 @@ int main() {
         switch (choice) {
         case 1:
             std::cout << "Enter city name: ";
-            std::cin >> city1;
+            std::cin.ignore();
+            std::getline(std::cin,city1);
             if (auto* tz = locationService.getTimeZone(city1)) {
                 utcTime = timeService.getCurrentUTCTime();
 
@@ -62,7 +63,7 @@ int main() {
 
 
         case 2: 
-            std::cout << "Do you want to convert specific time and date(y/n)";
+            std::cout << "Do you want to convert specific time and date(y/n): ";
             char ch;
             std::cin >> ch;
             switch (ch) {
@@ -71,9 +72,11 @@ int main() {
 
             case 'n':
                 std::cout << "Enter source city: ";
-                std::cin >> city1;
+                std::cin.ignore();
+                std::getline(std::cin, city1);
+
                 std::cout << "Enter target city: ";
-                std::cin >> city2;
+                std::getline(std::cin,city2);
 
                 // Clear invalid input
                 if (std::cin.fail()) {
@@ -111,8 +114,8 @@ int main() {
 
                     // Check for DST and display the result
                     DSTService dstService;
-                    bool isDst = dstService.isDST(resultTime, *tgtTZ);
-                    timeService.displayTime(resultTime, *tgtTZ, isDst);
+                    /*bool isDst = dstService.isDST(resultTime, *tgtTZ);*/
+                    /*timeService.displayTime(resultTime, *tgtTZ, isDst);*/
                 }
                 break;
             }
